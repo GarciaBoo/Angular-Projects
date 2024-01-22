@@ -1,4 +1,4 @@
-# BasicAssignment1ResolutionStart
+# Basic Assignment 1 Resolutio nStart
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
 
