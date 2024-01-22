@@ -36,7 +36,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build Angular project
-        run: ng build --output-path=Angular-Projects/Basics-Assignment-1-Practicing\ Components\ -\ resolution
+        run: ng build --output-path=Angular-Projects/Basics-Assignment-1-Practicing Components - resolution
 
   # Deployment job
   deploy:
