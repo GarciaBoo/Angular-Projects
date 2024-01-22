@@ -51,4 +51,4 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           # Specify the directory containing the built Angular project
-          deploy_dir: Angular-Projects/Basics-Assignment-1-Practicing\ Components\ -\ resolution
+          deploy_dir: Angular-Projects/Basics-Assignment-1-Practicing Components - resolution
