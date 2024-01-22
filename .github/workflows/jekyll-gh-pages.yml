@@ -1,4 +1,5 @@
-name: Deploy Angular Project to GitHub Pages
+# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:
   # Runs on pushes targeting the default branch
@@ -27,16 +28,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
         with:
-          node-version: "20.11"
-      - name: Install Angular CLI
-        run: npm install -g @angular/cli
-      - name: Install dependencies
-        run: npm install
-      - name: Build Angular project
-        run: ng build --output-path=Basics-Assignment-1-Practicing Components - resolution
+          source: ./
+          destination: ./_site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
+      - name: Practicing Components
+        run: cd Angular-Projects/Basics-Assignment-1-Practicing Components - resolution
 
   # Deployment job
   deploy:
@@ -50,5 +53,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          # Specify the directory containing the built Angular project
-          deploy_dir: Angular-Projects/Basics-Assignment-1-Practicing Components - resolution
+          deploy_dir: dist
