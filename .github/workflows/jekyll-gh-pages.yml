@@ -39,7 +39,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
 
       - name: Practicing Components
-        run: cd Angular-Projects/Basics-Assignment-1-Practicing Components - resolution
+        run: cd "Angular-Projects/Basics-Assignment-1-Practicing Components - resolution"
 
   # Deployment job
   deploy:
