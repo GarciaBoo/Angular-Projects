@@ -1,2 +1,2 @@
 # Angular-Projects
- Repository used to save my Angular study projects
+ Repository used to save my basic Angular study projects
