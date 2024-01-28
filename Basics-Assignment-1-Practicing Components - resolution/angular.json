@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/basic-assignment-1-resolution-start",
+            "outputPath": "dist/Basics-Assignment-1-Practicing Components - resolution",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
