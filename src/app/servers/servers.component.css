@@ -1,0 +1,23 @@
+h1{
+    color: red;
+}
+.server{
+    color: rgb(249, 150, 3);
+    display: inline-flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+button{
+    background-color: #ffe81f;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+button .selected {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-color: #ffe91fa2;
+}
