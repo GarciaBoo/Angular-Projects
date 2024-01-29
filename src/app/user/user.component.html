@@ -1,0 +1,15 @@
+<section class="user">
+    <h1>Resolution:</h1>
+    <p>Insert the user name:</p>
+    <!--Use two-way biding to recive the user input-->
+    <input type="text" class="form-control" [(ngModel)]="userName">
+
+    <!--Use string interpolation to show the user input-->
+    <p>User Name: {{userName}}</p>
+
+    <!--Use Proporty biding to disabled the button when the user name is null.
+      --Use Event biding to set the name null.
+    -->
+    <button class="btn btn-primary" [disabled]="isUserNameNull" (click)="setUserNameNull()">Clean User Name</button>
+
+</section>

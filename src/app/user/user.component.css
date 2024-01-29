@@ -1,0 +1,19 @@
+.user{
+    color: white;
+}
+
+
+button{
+    background-color: #ffe81f;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+/*Button shadows only happens when enabled*/
+button:not([disabled]):hover {
+    background-color: #ffe91fa2;
+}
+
+input.form-control {
+    width: 25%; /* Adjust the width as needed */
+}

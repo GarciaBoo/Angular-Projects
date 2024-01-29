@@ -1,14 +1,25 @@
-# Angular Study Repository
+# Practicing Data Binding
 
-This repository is intended solely for educational purposes, aiming to learn Angular, following "The Complete Guide to Angular" course. 
-The versioning by branches allows each project to be individually run on Vercel for building and viewing.
+## Project Overview
+This project, named **Practicing Data Binding**, was generated with Angular CLI version 17.1.1. It is intended for educational purposes, specifically as part of the first module of the course *The Complete Guide to Angular*. Please note that this project is not meant for production use.
 
-## Course Sections
+## Development server
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-Each branch of this repository represents a specific section of the course or a project deliverable. Below is an index with direct links to each branch:
+## Further help
 
-1. [**Section 1: Getting Started**](https://github.com/GarciaBoo/Angular-Projects/tree/Section-1-Gettin-Started) - Description of the section or project deliverable.
-2. [**Task 1: Practicing Components**](https://github.com/GarciaBoo/Angular-Projects/tree/Task-1-Practicing-Components) - Description of the section or project deliverable.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Code Comments
+
+### Two-Way Data Binding
+The project extensively uses two-way data binding with `[(ngModel)]`. This is evident in the relevant components and templates, such as [app.component.ts] and [app.component.html]. For more information on two-way data binding in Angular, refer to the [Angular documentation on two-way data binding](https://angular.io/guide/binding-syntax#types-of-data-binding).
 
 
-**Note:** Make sure to review and follow the specific instructions in each branch to better understand the context and learning objectives.
+### Button Interaction
+The "Clean User Name" button demonstrates interaction with user input. It utilizes event binding and provides functionality to dynamically update data. Check [user.component.ts] and [user.component.html].
+
+### Styling with CSS
+CSS styling enhances the user experience. Special attention has been given to the hover effect of the button, designed to work only when the button is clickable (not disabled). Refer to [styles.css] for the styling details.
+
+Feel free to explore the source files to gain a deeper understanding of the implemented concepts.
