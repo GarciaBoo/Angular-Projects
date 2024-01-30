@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms'; //FormsModule is Required for Two-
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
+import { DatabidingComponent } from './databiding/databiding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+    DatabidingComponent
   ],
 
   imports: [

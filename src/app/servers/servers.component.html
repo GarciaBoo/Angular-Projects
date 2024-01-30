@@ -1,30 +1,30 @@
-<section class="server">
-    <p>servers works!</p>
+<section>
+    <h1>Understading Databiding!</h1>
 
     <!--This is the property biding exemple-->
-    <h1>This is the property biding exemple</h1>
+    <h2>This is the property biding exemple</h2>
     <button class="btn btn-primary" [disabled]="!allowNewServer">Add Server property biding</button>
 
     <!--This is the string interpolation exemple-->
-    <h1>This is the string interpolation exemple</h1>
-    <p>Server ID: {{serverID}}</p>
+    <h2>This is the string interpolation exemple</h2>
+    <p>:Server ID {{serverID}}</p>
     <p [innerText]="allowNewServer"></p>
 
     <!--This is the event biding exemple-->
-    <h1>This is the event biding exemple</h1>
-    <button class="btn btn-primary" 
-    [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server Event biding</button>
-    <p>{{serverCreationStatus}}</p>
+    <h2>This is the event biding exemple</h2>
 
     <input type="text" class="form-control" (input)="onUpdateServerName($event)">
     <p>Server Name: {{serverName}}</p>
 
+    <button class="btn btn-primary" 
+    [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server Event biding</button>
+    <p>{{serverCreationStatus}}</p>
+
     <!--This is the Two-way biding exemple-->
-    <h1>This is the Two-way biding exemple</h1>
+    <h2>This is the Two-way biding exemple</h2>
     <input type="text" class="form-control" [(ngModel)]="serverName">
     <p>Server Name: {{serverName}}</p>
 
-
-    <app-server></app-server>
-
 </section>
+
+<app-server></app-server>

@@ -1,0 +1,20 @@
+<p>databiding works!</p>
+
+<section>
+
+    <!--This is the Directives exemple-->
+    <h1> Understading Directives</h1>
+    <input type="text" class="form-control" [(ngModel)]="serverName">
+    <!-- <p>Server Name: {{serverName}}</p> -->
+
+    <button class="btn btn-primary" 
+    [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button>
+    <!--  <p>{{serverCreationStatus}}</p> -->
+    <p *ngIf="serverCreated; else noServer"> Server was created, server name is {{serverName}}</p>
+    
+    <!-- Optinal Way
+    <ng-template #noServer> 
+        <p>No server was created!</p>
+    </ng-template> 
+    --> 
+</section>
