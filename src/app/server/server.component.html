@@ -1,1 +1,6 @@
-<h3> This is the ServerComponent<h3>
+<!--ngStyle -> is the directive-->
+<!--[] -> Indicates we want to bidding to some property on the directive in this case happens to be ngStyle-->
+<!--We are bidding to a property of the directive-->
+<p [ngStyle]="{backgroundColor: getColor()}" [ngClass]="{online: serverStatus ==='online'}">
+    {{'Server'}} with ID {{ServerID}} is {{getServerStatus()}}
+</p>
