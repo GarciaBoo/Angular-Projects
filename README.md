@@ -19,4 +19,3 @@ The solution utilizes Angular's *ngIf directive for conditional rendering, contr
 For dynamic styling of log entries, ngStyle is employed to set the background color conditionally, while ngClass is utilized to dynamically apply a class for text color. This enhances the visual representation of log entries, especially beyond the 5th item.
 
 The component logic, encapsulated in SecretComponent, efficiently manages the state of the secret content (addSecret) and tracks button click logs in the 'logs' array. This separation of concerns contributes to a clean and maintainable Angular component.
-a
