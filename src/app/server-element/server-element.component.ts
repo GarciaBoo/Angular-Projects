@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-server-element',
@@ -6,6 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './server-element.component.css'
 })
 export class ServerElementComponent {
-  serverElements = [];
+  //Typescrit sintext to define an element type
+  @Input('srvElement') element: {type: string, name:string, content: string};
+  
+  constructor(){  }
 
+  ngOnInit(){
+
+  }
 }
